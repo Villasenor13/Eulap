@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FingerprintSignIn"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eulaplogo"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Title"
+        android:layout_above="@+id/lowerTitle"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Position your Face in the Frame"
+            android:textColor="@color/eulap"
+            android:fontFamily="@font/ubuntu"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+            />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/eulap"
+                    android:fontFamily="@font/ubuntu"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/eulap"
+                    android:fontFamily="@font/ubuntu"
+                    android:textSize="18sp"
+                    android:layout_gravity="end"
+                    />
+
+            </GridLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/lowerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Android Attendance Authentication"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu"
+        android:textAlignment="center"/>
+</RelativeLayout>

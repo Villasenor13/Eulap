@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "693947688025",
+    "project_id": "eulap-dtr",
+    "storage_bucket": "eulap-dtr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693947688025:android:81b0725da64bf9643afd48",
+        "android_client_info": {
+          "package_name": "com.example.eulap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693947688025-laqu5f7clrk4sapi7rps6s8kjcru4lcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ2O01aOW1Fg-2f5V94Yu7m3PDXgPexDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693947688025-laqu5f7clrk4sapi7rps6s8kjcru4lcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

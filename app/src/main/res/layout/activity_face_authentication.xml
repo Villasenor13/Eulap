@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceAuthentication"
+    android:background="@drawable/gradient"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp">
+
+
+
+
+        <ImageView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/eulaplogo"
+        />
+
+
+
+    <GridLayout
+        android:layout_below="@+id/Title"
+        android:layout_above="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="1">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:text="Back"
+            android:textSize="8sp"
+            android:backgroundTint="@color/eulap"
+            android:textColor="@color/white"
+            />
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Android Attendance Authentication"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

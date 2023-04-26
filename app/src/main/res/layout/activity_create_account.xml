@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateAccount"
+    android:background="@drawable/gradient"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp">
+    
+    <ImageView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eulaplogo"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Title"
+        android:rowCount="2"
+        android:columnCount="1">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Middle Name:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/middlename"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/lastname"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/age"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact #:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work Position:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/workposition"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birth Date:"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/birthday"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    />
+            </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_row="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="1"
+                android:columnCount="2">
+
+                <Button
+                    android:id="@+id/home"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:text="Back"
+                    android:backgroundTint="@color/eulap"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu"
+                    >
+                </Button>
+
+                <Button
+                    android:id="@+id/signin"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_columnWeight="1"
+                    android:text="Create Account"
+                    android:backgroundTint="@color/eulap"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu"
+                    >
+                </Button>
+
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Android Attendance Authentication"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu"
+        android:textAlignment="center"/>
+    
+
+</RelativeLayout>
